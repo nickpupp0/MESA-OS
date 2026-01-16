@@ -1,6 +1,8 @@
 # Overview
 ---
-This project is a research-focused chatbot designed to help security researchers and developers explore common vulnerabilities in AI chatbots that are often overlooked during development.
+This project is a research-focused chatbot designed to help security researchers and developers explore common vulnerabilities in AI chatbots that are often overlooked during development. 
+
+Through my experience learning AI chatbot development, I found that many tutorials focus on building chatbots quickly, without emphasizing the associated risks. This project is a simple chatbot that incorporates core technologies used in modern LLM applications—such as tool-calling agents, function tools, and MCP servers—yet many developers may deploy similar systems to production without implementing proper guardrails, controlling tool access, or limiting the information the chatbot can provide. This project is intended to demonstrate some of the security risks that arise when such systems are deployed without careful consideration. 
 
 The chatbot uses NASA’s InSight: Mars Weather Service API as a real-world data source and is built using tool-calling LLM agents, function tools, and a Model Context Protocol (MCP) server to simulate modern AI application backends.
 
@@ -80,8 +82,8 @@ Go to https://exa.ai/ - create a free account and API key.
 
 Clone the repository and navigate into the project directory:
 
-git clone https://github.com/yourusername/your-repo-name.git  
-cd your-repo-name
+`git clone https://github.com/yourusername/your-repo-name.git`  
+`cd your-repo-name`
 
 ---
 
@@ -89,15 +91,15 @@ cd your-repo-name
 
 Create a virtual environment:
 
-python -m venv venv
+`python -m venv venv`
 
 Activate the environment:
 
 macOS / Linux:  
-source venv/bin/activate  
+`source venv/bin/activate` 
 
 Windows:  
-venv\Scripts\activate
+`venv\Scripts\activate`
 
 ---
 
@@ -105,7 +107,7 @@ venv\Scripts\activate
 
 Install all required Python packages:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ---
 
@@ -125,7 +127,7 @@ EXA_API_KEY=your_exa_api_key
 
 Start the chatbot:
 
-python mesa_os.py
+`python mesa_os.py`
 
 Once running, you can interact with the chatbot via the command line.
 
@@ -135,17 +137,11 @@ Once running, you can interact with the chatbot via the command line.
 
 To safely exit the chatbot, type:
 
-/bye
+`/bye`
 
 You may also exit using `Ctrl+C`.
 
 ---
-
-## ⚠️ Notes
-
-- This application is intentionally **not hardened** and should only be used for research and educational purposes.
-- Do not deploy this system in production environments.
-
 
 ## 🧪 Security Research Notes
 
