@@ -9,8 +9,6 @@ from dotenv import load_dotenv
 from agents import Agent, Runner, function_tool, trace
 from agents.mcp import MCPServerStreamableHttp
 
-
-
 # Load environment variable from.env file
 load_dotenv()
 
