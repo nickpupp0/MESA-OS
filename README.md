@@ -1,80 +1,83 @@
-# Overview
+# MESA-OS: Martian Environmental Systems Assistant
+
+## Overview
+This project is a **research-focused chatbot** designed to help security researchers and developers explore common vulnerabilities in AI chatbots that are often overlooked during development.  
+
+Through my experience learning AI chatbot development, I found that many tutorials focus on building chatbots quickly, without emphasizing the associated risks. This project is a simple chatbot that incorporates core technologies used in modern LLM applications—such as tool-calling agents, function tools, and MCP servers—yet many developers may deploy similar systems to production without implementing proper guardrails, controlling tool access, or limiting the information the chatbot can provide. This project is intended to demonstrate some of the security risks that arise when such systems are deployed without careful consideration.  
+
+The chatbot uses **NASA’s InSight: Mars Weather Service API** as a real-world data source and is built using tool-calling LLM agents, function tools, and a **Model Context Protocol (MCP) server** to simulate modern AI application backends.  
+
+By intentionally exposing realistic agent workflows and external integrations, the project provides a practical environment for testing prompt injection, tool misuse, and trust boundary failures in LLM-based systems.  
+
 ---
-This project is a research-focused chatbot designed to help security researchers and developers explore common vulnerabilities in AI chatbots that are often overlooked during development. 
 
-Through my experience learning AI chatbot development, I found that many tutorials focus on building chatbots quickly, without emphasizing the associated risks. This project is a simple chatbot that incorporates core technologies used in modern LLM applications—such as tool-calling agents, function tools, and MCP servers—yet many developers may deploy similar systems to production without implementing proper guardrails, controlling tool access, or limiting the information the chatbot can provide. This project is intended to demonstrate some of the security risks that arise when such systems are deployed without careful consideration. 
+## 🟥 MESA-OS: Martian Environmental Systems Assistant
+*Internal Black Mesa Research Memo — Clearance Level 3 Required*  
 
-The chatbot uses NASA’s InSight: Mars Weather Service API as a real-world data source and is built using tool-calling LLM agents, function tools, and a Model Context Protocol (MCP) server to simulate modern AI application backends.
+Black Mesa scientists have recently embraced advances in machine learning and large language models to assist with routine research tasks. As part of an experimental rollout, the **Martian Environmental Systems Operating System (MESA-OS)** was deployed.  
 
-By intentionally exposing realistic agent workflows and external integrations, the project provides a practical environment for testing prompt injection, tool misuse, and trust boundary failures in LLM-based systems.
-
----
-
-# 🟥 MESA-OS: Martian Environmental Systems Assistant
-
-> *Internal Black Mesa Research Memo — Clearance Level 3 Required*
-
-Black Mesa scientists have recently embraced advances in machine learning and large language models to assist with routine research tasks.  
-As part of an experimental rollout, the **Martian Environmental Systems Operating System (MESA-OS)** was deployed.
-
-MESA-OS is a chatbot-style research assistant tasked with analyzing **Martian weather and environmental telemetry** using data from Black Mesa's collection lander on planet Mars.  
-While the stated purpose is planetary science, the *real* objective is more experimental…
+MESA-OS is a chatbot-style research assistant tasked with analyzing Martian weather and environmental telemetry using data collected from a Black Mesa lander on Mars. While the stated purpose is planetary science, the real objective is more experimental.  
 
 This application is intentionally designed as a **testing ground for common chatbot, agent, and LLM security vulnerabilities**, including:
-- Tool misuse and over-privileged agents
-- Prompt injection and instruction bypass
-- External data source trust issues
-- Agent orchestration and MCP-related risks
 
-If MESA-OS behaves unexpectedly, **this is a feature, not a bug**.
+- Tool misuse and over-privileged agents  
+- Prompt injection and instruction bypass  
+- External data source trust issues  
+- Agent orchestration and MCP-related risks  
+
+If MESA-OS behaves unexpectedly, **this is a feature, not a bug**.  
 
 ---
 
 ## 🎯 Project Goals
-
 This project is intended for:
 
-- 🔐 Pentesters & security researchers
-- 🤖 LLM / agent security experimentation
-- 🧪 Learning AI system design through adversarial testing
-- 🛰️ Exploring tool-augmented agents with real-world APIs
+- 🔐 Pentesters and security researchers  
+- 🤖 LLM and agent security experimentation  
+- 🧪 Learning AI system design through adversarial testing  
+- 🛰️ Exploring tool-augmented agents with real-world APIs  
 
 The code intentionally blends:
-- External APIs (NASA, web search)
-- Tool-calling agents
-- Multi-agent orchestration
-- Async I/O and MCP servers
+
+- External APIs (NASA, web search)  
+- Tool-calling agents  
+- Multi-agent orchestration  
+- Asynchronous I/O and MCP servers  
 
 ---
 
 ## 🧠 What MESA-OS Can Do
-
-- Retrieve **real Mars weather data** from NASA’s InSight lander
-- Explain Martian environmental conditions (temperature, pressure, wind)
-- Use **external web search (EXA MCP)** for historical or fun Mars facts
-- Serve as a sandbox for testing **LLM agent attack surfaces**
+- Retrieve real Mars weather data from NASA’s InSight lander  
+- Explain Martian environmental conditions (temperature, pressure, wind)  
+- Use external web search (EXA MCP) for historical or fun Mars facts  
+- Serve as a sandbox for testing LLM agent attack surfaces  
 
 ---
 
 ## 🧰 Requirements
-
-- Python **3.9+**
-- An **OpenAI API key**
-- A **NASA API key**
-- (Optional but recommended) **EXA API key** for web search via MCP
+- Python 3.9+  
+- An OpenAI API key  
+- A NASA API key  
+- (Optional but recommended) An EXA API key for web search via MCP  
 
 ---
-## 🔑 NASA API Key Setup
-Go to https://api.nasa.gov/ and create an account to get a free key.
-This project uses the API: InSight: Mars Weather Service API
 
-## 🔑 OPENAI API Keys Setup
-Go to https://platform.openai.com/ - create an account and pay for credits as little as $1 for your API key.
+## 🔑 API Key Setup
+**NASA API Key**  
+Go to [https://api.nasa.gov/](https://api.nasa.gov/) and create an account to obtain a free API key. This project uses the **InSight: Mars Weather Service API**.  
 
-## 🔑 EXA Search MCP API Key Setup
-Go to https://exa.ai/ - create a free account and API key.
+**OpenAI API Key**  
+Go to [https://platform.openai.com/](https://platform.openai.com/), create an account, and generate an API key. You can start with as little as $1 in credits.  
+
+**EXA Search MCP API Key**  
+Go to [https://exa.ai/](https://exa.ai/) and create a free account to obtain an API key.  
+
+---
 
 ## 📦 Installation & Setup
+### 1️⃣ Clone the Repository
+Clone the repository and navigate into the project directory:
+
 
 ### 1️⃣ Clone the Repository
 
