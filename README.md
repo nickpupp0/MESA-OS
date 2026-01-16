@@ -1,11 +1,12 @@
 # Overview
-
+---
 This project is a research-focused chatbot designed to help security researchers and developers explore common vulnerabilities in AI chatbots that are often overlooked during development.
 
 The chatbot uses NASA’s InSight: Mars Weather Service API as a real-world data source and is built using tool-calling LLM agents, function tools, and a Model Context Protocol (MCP) server to simulate modern AI application backends.
 
 By intentionally exposing realistic agent workflows and external integrations, the project provides a practical environment for testing prompt injection, tool misuse, and trust boundary failures in LLM-based systems.
-> 
+
+---
 
 # 🟥 MESA-OS: Mars Environmental Systems Assistant
 
