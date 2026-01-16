@@ -20,8 +20,6 @@ As part of an experimental rollout, the **Mars Environmental Systems Operating S
 MESA-OS is a chatbot-style research assistant tasked with analyzing **Martian weather and environmental telemetry** using data from Black Mesa's collection lander on planet XEN.  
 While the stated purpose is planetary science, the *real* objective is more experimental…
 
-Behind the scenes, this chatbot is intended to communicate with 
-
 This application is intentionally designed as a **testing ground for common chatbot, agent, and LLM security vulnerabilities**, including:
 - Tool misuse and over-privileged agents
 - Prompt injection and instruction bypass
