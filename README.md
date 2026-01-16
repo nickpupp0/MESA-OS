@@ -124,7 +124,7 @@ EXA_API_KEY=your_exa_api_key
 
 Start the chatbot:
 
-python main.py
+python mesa_os.py
 
 Once running, you can interact with the chatbot via the command line.
 
