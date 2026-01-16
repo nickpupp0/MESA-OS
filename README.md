@@ -171,9 +171,4 @@ This project is:
 
 ---
 
-## 🧬 Quote
-
-> *“The right AI in the wrong place can make all the difference.”*
-
-Happy hacking. 🛠️
 
