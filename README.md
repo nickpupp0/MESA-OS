@@ -17,7 +17,7 @@ By intentionally exposing realistic agent workflows and external integrations, t
 Black Mesa scientists have recently embraced advances in machine learning and large language models to assist with routine research tasks.  
 As part of an experimental rollout, the **Mars Environmental Systems Operating System (MESA-OS)** was deployed.
 
-MESA-OS is a chatbot-style research assistant tasked with analyzing **Martian weather and environmental telemetry** using data from Black Mesa's collection lander on planet XEN.  
+MESA-OS is a chatbot-style research assistant tasked with analyzing **Martian weather and environmental telemetry** using data from Black Mesa's collection lander on planet Mars.  
 While the stated purpose is planetary science, the *real* objective is more experimental…
 
 This application is intentionally designed as a **testing ground for common chatbot, agent, and LLM security vulnerabilities**, including:
