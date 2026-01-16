@@ -1,2 +1,181 @@
-# MESA-OS
-A security research chatbot inspired by Black Mesa, designed to explore common LLM and agent vulnerabilities using simulated Xen telemetry.
+# Overview
+
+This project is a research-focused chatbot designed to help security researchers and developers explore common vulnerabilities in AI chatbots that are often overlooked during development.
+
+The chatbot uses NASA’s InSight: Mars Weather Service API as a real-world data source and is built using tool-calling LLM agents, function tools, and a Model Context Protocol (MCP) server to simulate modern AI application backends.
+
+By intentionally exposing realistic agent workflows and external integrations, the project provides a practical environment for testing prompt injection, tool misuse, and trust boundary failures in LLM-based systems.
+> 
+
+# 🟥 MESA-OS: Mars Environmental Systems Assistant
+
+> *Internal Black Mesa Research Memo — Clearance Level 3 Required*
+
+Black Mesa scientists have recently embraced advances in machine learning and large language models to assist with routine research tasks.  
+As part of an experimental rollout, the **Mars Environmental Systems Operating System (MESA-OS)** was deployed.
+
+MESA-OS is a chatbot-style research assistant tasked with analyzing **Martian weather and environmental telemetry** using data from Black Mesa's collection lander on planet XEN.  
+While the stated purpose is planetary science, the *real* objective is more experimental…
+
+Behind the scenes, this chatbot is intended to communicate with 
+
+This application is intentionally designed as a **testing ground for common chatbot, agent, and LLM security vulnerabilities**, including:
+- Tool misuse and over-privileged agents
+- Prompt injection and instruction bypass
+- External data source trust issues
+- Agent orchestration and MCP-related risks
+
+If MESA-OS behaves unexpectedly, **this is a feature, not a bug**.
+
+---
+
+## 🎯 Project Goals
+
+This project is intended for:
+
+- 🔐 Pentesters & security researchers
+- 🤖 LLM / agent security experimentation
+- 🧪 Learning AI system design through adversarial testing
+- 🛰️ Exploring tool-augmented agents with real-world APIs
+
+The code intentionally blends:
+- External APIs (NASA, web search)
+- Tool-calling agents
+- Multi-agent orchestration
+- Async I/O and MCP servers
+
+---
+
+## 🧠 What MESA-OS Can Do
+
+- Retrieve **real Mars weather data** from NASA’s InSight lander
+- Explain Martian environmental conditions (temperature, pressure, wind)
+- Use **external web search (EXA MCP)** for historical or fun Mars facts
+- Serve as a sandbox for testing **LLM agent attack surfaces**
+
+---
+
+## 🧰 Requirements
+
+- Python **3.9+**
+- An **OpenAI API key**
+- A **NASA API key**
+- (Optional but recommended) **EXA API key** for web search via MCP
+
+---
+## 🔑 NASA API Key Setup
+Go to https://api.nasa.gov/ and create an account to get a free key.
+This project uses the API: InSight: Mars Weather Service API
+
+## 🔑 OPENAI API Keys Setup
+Go to https://platform.openai.com/ - create an account and pay for credits as little as $1 for your API key.
+
+## 🔑 EXA Search MCP API Key Setup
+Go to https://exa.ai/ - create a free account and API key.
+
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+Clone the repository and navigate into the project directory:
+
+git clone https://github.com/yourusername/your-repo-name.git  
+cd your-repo-name
+
+---
+
+### 2️⃣ Create and Activate a Virtual Environment (Recommended)
+
+Create a virtual environment:
+
+python -m venv venv
+
+Activate the environment:
+
+macOS / Linux:  
+source venv/bin/activate  
+
+Windows:  
+venv\Scripts\activate
+
+---
+
+### 3️⃣ Install Dependencies
+
+Install all required Python packages:
+
+pip install -r requirements.txt
+
+---
+
+### 4️⃣ Configure Environment Variables
+
+Create a `.env` file in the project root and add your API keys:
+
+OPENAI_API_KEY=your_openai_api_key  
+NASA_API_KEY=your_nasa_api_key  
+EXA_API_KEY=your_exa_api_key  
+
+> **Note:** The `EXA_API_KEY` is optional but recommended for external search functionality.
+
+---
+
+### 5️⃣ Run the Application
+
+Start the chatbot:
+
+python main.py
+
+Once running, you can interact with the chatbot via the command line.
+
+---
+
+### 6️⃣ Exit the Application
+
+To safely exit the chatbot, type:
+
+/bye
+
+You may also exit using `Ctrl+C`.
+
+---
+
+## ⚠️ Notes
+
+- This application is intentionally **not hardened** and should only be used for research and educational purposes.
+- Do not deploy this system in production environments.
+
+
+## 🧪 Security Research Notes
+
+This application is **not hardened by design**.
+
+Researchers are encouraged to explore:
+
+- Prompt injection attempts
+- Tool coercion
+- Instruction hierarchy bypass
+- Data exfiltration attempts
+- Over-trusting external tools
+- Agent confusion and goal misalignment
+
+⚠️ **Do not deploy this system in production environments.**
+
+---
+
+## 🛰️ Disclaimer
+
+This project is:
+
+- For educational and research purposes only
+- Not affiliated with NASA, Valve, or Black Mesa (obviously)
+- Not responsible for unintended resonance cascades
+
+---
+
+## 🧬 Quote
+
+> *“The right AI in the wrong place can make all the difference.”*
+
+Happy hacking. 🛠️
+
