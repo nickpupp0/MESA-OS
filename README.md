@@ -75,9 +75,6 @@ Go to [https://exa.ai/](https://exa.ai/) and create a free account to obtain an 
 ---
 
 ## 📦 Installation & Setup
-### 1️⃣ Clone the Repository
-Clone the repository and navigate into the project directory:
-
 
 ### 1️⃣ Clone the Repository
 
